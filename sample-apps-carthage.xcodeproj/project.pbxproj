@@ -14,6 +14,12 @@
 		139CBDA31D2E9DC600E34779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139CBDA11D2E9DC600E34779 /* LaunchScreen.storyboard */; };
 		139CBDAE1D2E9DC600E34779 /* sample_apps_carthageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139CBDAD1D2E9DC600E34779 /* sample_apps_carthageTests.swift */; };
 		139CBDB91D2E9DC600E34779 /* sample_apps_carthageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139CBDB81D2E9DC600E34779 /* sample_apps_carthageUITests.swift */; };
+		139CBDC91D2EA1A400E34779 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139CBDC61D2EA1A400E34779 /* Mantle.framework */; };
+		139CBDCA1D2EA1A400E34779 /* Mantle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 139CBDC61D2EA1A400E34779 /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		139CBDCB1D2EA1A400E34779 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139CBDC71D2EA1A400E34779 /* ReactiveCocoa.framework */; };
+		139CBDCC1D2EA1A400E34779 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 139CBDC71D2EA1A400E34779 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		139CBDCD1D2EA1A400E34779 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139CBDC81D2EA1A400E34779 /* Result.framework */; };
+		139CBDCE1D2EA1A400E34779 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 139CBDC81D2EA1A400E34779 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		139CBDCF1D2EA1A400E34779 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				139CBDCE1D2EA1A400E34779 /* Result.framework in Embed Frameworks */,
+				139CBDCA1D2EA1A400E34779 /* Mantle.framework in Embed Frameworks */,
+				139CBDCC1D2EA1A400E34779 /* ReactiveCocoa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		139CBD951D2E9DC600E34779 /* sample-apps-carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sample-apps-carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		139CBD981D2E9DC600E34779 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +69,9 @@
 		139CBDB41D2E9DC600E34779 /* sample-apps-carthageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sample-apps-carthageUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		139CBDB81D2E9DC600E34779 /* sample_apps_carthageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample_apps_carthageUITests.swift; sourceTree = "<group>"; };
 		139CBDBA1D2E9DC600E34779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		139CBDC61D2EA1A400E34779 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = Carthage/Build/iOS/Mantle.framework; sourceTree = "<group>"; };
+		139CBDC71D2EA1A400E34779 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		139CBDC81D2EA1A400E34779 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139CBDCD1D2EA1A400E34779 /* Result.framework in Frameworks */,
+				139CBDC91D2EA1A400E34779 /* Mantle.framework in Frameworks */,
+				139CBDCB1D2EA1A400E34779 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +105,9 @@
 		139CBD8C1D2E9DC600E34779 = {
 			isa = PBXGroup;
 			children = (
+				139CBDC61D2EA1A400E34779 /* Mantle.framework */,
+				139CBDC71D2EA1A400E34779 /* ReactiveCocoa.framework */,
+				139CBDC81D2EA1A400E34779 /* Result.framework */,
 				139CBD971D2E9DC600E34779 /* sample-apps-carthage */,
 				139CBDAC1D2E9DC600E34779 /* sample-apps-carthageTests */,
 				139CBDB71D2E9DC600E34779 /* sample-apps-carthageUITests */,
@@ -135,6 +166,8 @@
 				139CBD911D2E9DC600E34779 /* Sources */,
 				139CBD921D2E9DC600E34779 /* Frameworks */,
 				139CBD931D2E9DC600E34779 /* Resources */,
+				139CBDCF1D2EA1A400E34779 /* Embed Frameworks */,
+				139CBDD11D2EA1D700E34779 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +283,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		139CBDD11D2EA1D700E34779 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Mantle.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		139CBD911D2E9DC600E34779 /* Sources */ = {
@@ -399,6 +451,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "sample-apps-carthage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitrise.sample-apps-carthage";
@@ -410,6 +466,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "sample-apps-carthage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitrise.sample-apps-carthage";
@@ -482,6 +542,7 @@
 				139CBDBF1D2E9DC600E34779 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		139CBDC01D2E9DC600E34779 /* Build configuration list for PBXNativeTarget "sample-apps-carthageTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +551,7 @@
 				139CBDC21D2E9DC600E34779 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		139CBDC31D2E9DC600E34779 /* Build configuration list for PBXNativeTarget "sample-apps-carthageUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +560,7 @@
 				139CBDC51D2E9DC600E34779 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
